@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface": "#11131d",
+                        "surface-container-highest": "#32343f",
+                        "on-primary-fixed-variant": "#5b00c5",
+                        "on-tertiary-fixed-variant": "#3323cc",
+                        "surface-container-low": "#191b26",
+                        "surface-container": "#1d1f2a",
+                        "outline-variant": "#4a4455",
+                        "secondary": "#fff9ef",
+                        "on-primary-fixed": "#250059",
+                        "inverse-on-surface": "#2e303b",
+                        "surface-container-high": "#282934",
+                        "surface-container-lowest": "#0c0e18",
+                        "on-tertiary": "#1d00a5",
+                        "on-secondary": "#3a3000",
+                        "on-secondary-fixed": "#221b00",
+                        "on-primary": "#3f008d",
+                        "inverse-primary": "#7331df",
+                        "secondary-fixed": "#ffe16d",
+                        "surface-tint": "#d3bbff",
+                        "primary-container": "#6d28d9",
+                        "surface-variant": "#32343f",
+                        "tertiary-container": "#473cdd",
+                        "tertiary": "#c3c0ff",
+                        "on-error": "#690005",
+                        "surface-bright": "#373844",
+                        "inverse-surface": "#e1e1f0",
+                        "primary-fixed": "#ebddff",
+                        "on-tertiary-container": "#cccaff",
+                        "on-primary-container": "#dac5ff",
+                        "on-error-container": "#ffdad6",
+                        "on-secondary-fixed-variant": "#544600",
+                        "background": "#11131d",
+                        "on-surface-variant": "#ccc3d7",
+                        "tertiary-fixed": "#e2dfff",
+                        "primary": "#d3bbff",
+                        "on-tertiary-fixed": "#0f0069",
+                        "outline": "#958da1",
+                        "surface-dim": "#11131d",
+                        "secondary-fixed-dim": "#e9c400",
+                        "on-secondary-container": "#725f00",
+                        "error": "#ffb4ab",
+                        "error-container": "#93000a",
+                        "on-surface": "#e1e1f0",
+                        "tertiary-fixed-dim": "#c3c0ff",
+                        "secondary-container": "#ffdb3c",
+                        "on-background": "#e1e1f0",
+                        "primary-fixed-dim": "#d3bbff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Plus Jakarta Sans"],
+                        "body": ["Plus Jakarta Sans"],
+                        "label": ["Plus Jakarta Sans"]
+                    }
+                },
+            }
+        }
+    </script>
+<style>
+        .star-grid {
+            background-image: radial-gradient(circle at 1px 1px, rgba(211, 187, 255, 0.1) 1px, transparent 0);
+            background-size: 40px 40px;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body min-h-screen overflow-x-hidden star-grid">
+<!-- Top Navigation -->
+<header class="w-full top-0 sticky bg-[#11131d]/60 backdrop-blur-xl z-50 shadow-[0_0_20px_rgba(211,187,255,0.08)]">
+<div class="flex justify-between items-center px-6 py-4 w-full max-w-6xl mx-auto">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 bg-gradient-to-br from-[#d3bbff] to-[#6d28d9] rounded-lg flex items-center justify-center rotate-12">
+<span class="material-symbols-outlined text-on-primary-fixed" style="font-variation-settings: 'FILL' 1;">rocket_launch</span>
+</div>
+<h1 class="text-2xl font-black text-transparent bg-clip-text bg-gradient-to-br from-[#d3bbff] to-[#6d28d9] font-['Plus_Jakarta_Sans'] tracking-tight">CosmoQuiz</h1>
+</div>
+<div class="hidden md:flex items-center gap-8">
+<span class="font-['Plus_Jakarta_Sans'] font-bold text-[#fff9ef] hover:scale-105 transition-transform duration-200 cursor-pointer">Moon Missions</span>
+<span class="font-['Plus_Jakarta_Sans'] font-bold text-[#d3bbff]/70 hover:scale-105 transition-transform duration-200 cursor-pointer">Planet Explorer</span>
+<span class="font-['Plus_Jakarta_Sans'] font-bold text-[#d3bbff]/70 hover:scale-105 transition-transform duration-200 cursor-pointer">Star Map</span>
+</div>
+<div class="flex items-center gap-4">
+<div class="text-right hidden sm:block">
+<p class="text-xs font-bold text-primary opacity-60 uppercase tracking-widest">Level 5 Explorer</p>
+<p class="text-sm font-extrabold text-secondary">Space Cadet</p>
+</div>
+<span class="material-symbols-outlined text-[#d3bbff] text-3xl cursor-pointer hover:scale-105 transition-transform">account_circle</span>
+</div>
+</div>
+</header>
+<main class="max-w-5xl mx-auto px-6 pt-12 pb-24">
+<!-- Progress Section -->
+<div class="flex flex-col md:flex-row items-center justify-between mb-16 gap-8">
+<div class="flex-1 w-full">
+<div class="flex justify-between items-end mb-4">
+<h2 class="text-3xl font-extrabold tracking-tight text-on-surface">Mission Progress</h2>
+<span class="text-secondary font-black text-xl">04 <span class="text-primary/40">/ 10</span></span>
+</div>
+<!-- Galaxy Orbit Progress Bar -->
+<div class="h-4 w-full bg-surface-container-highest rounded-full overflow-hidden p-1 border border-outline-variant/10">
+<div class="h-full w-[40%] bg-gradient-to-r from-primary to-primary-container rounded-full relative">
+<div class="absolute right-0 top-0 bottom-0 w-8 bg-white/20 blur-sm"></div>
+</div>
+</div>
+</div>
+<!-- Orbit Achievement Tracker -->
+<div class="flex items-center gap-2">
+<div class="w-12 h-12 rounded-full border-2 border-dashed border-outline-variant flex items-center justify-center group">
+<div class="w-8 h-8 rounded-full bg-secondary-container text-on-secondary flex items-center justify-center shadow-[0_0_15px_rgba(255,219,60,0.4)]">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+</div>
+<div class="w-10 h-10 rounded-full border-2 border-dashed border-outline-variant flex items-center justify-center">
+<div class="w-2 h-2 rounded-full bg-outline-variant"></div>
+</div>
+<div class="w-10 h-10 rounded-full border-2 border-dashed border-outline-variant flex items-center justify-center">
+<div class="w-2 h-2 rounded-full bg-outline-variant"></div>
+</div>
+</div>
+</div>
+<!-- Question Section -->
+<div class="text-center mb-16 relative">
+<div class="absolute -top-12 left-1/2 -translate-x-1/2 opacity-10">
+<span class="material-symbols-outlined text-[120px]">lightbulb</span>
+</div>
+<p class="text-primary font-black uppercase tracking-[0.3em] mb-4 text-sm">Question 04</p>
+<h3 class="text-4xl md:text-6xl font-black text-on-surface max-w-3xl mx-auto leading-tight">
+                Which planet is the <span class="text-secondary-container drop-shadow-[0_0_10px_rgba(255,219,60,0.3)]">brightest</span>?
+            </h3>
+</div>
+<!-- Options Grid -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 relative max-w-5xl mx-auto">
+<!-- Venus -->
+<div class="group cursor-pointer">
+<div class="bg-surface-container-high rounded-[2rem] p-8 h-full flex flex-col items-center text-center transition-all duration-300 hover:-translate-y-2 border-2 border-transparent hover:border-primary/30 relative overflow-hidden">
+<div class="absolute -top-20 -right-20 w-40 h-40 bg-secondary-container/10 blur-[60px] rounded-full group-hover:bg-secondary-container/20"></div>
+<div class="mb-8 relative h-48 w-48 flex items-center justify-center">
+<img alt="Venus" class="w-full h-full object-contain drop-shadow-[0_0_30px_rgba(255,219,60,0.5)] z-10" data-alt="vibrant flat cartoon illustration of venus planet glowing with warm yellow and orange toxic clouds in deep space" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCtxnwUAvedK7HI0UGKSyDJX7HSkpNEiebimgSR274YKUuUWkIFI-wt2mp1Ty7haI0J8JZ9ACWxaSjWa5qPCNQnDkTP4jiDeuvFIWqVgqLm6533vrblwwh435OpoQnclnMKmzvQvYFq-SLFruEDwxNYDh_A1zFF44nyhshsjgkXKkiyRwBF9G8PcuIAnSG2NYub63W0NtpYs3h0YzK72KaP-YaSg65B4DlqqqNeOUjTftLFx7Az2axMVLtrhc7DwM3G1NOX__OfMs0"/>
+<div class="absolute inset-0 bg-secondary-container/20 rounded-full blur-3xl animate-pulse"></div>
+</div>
+<h4 class="text-2xl font-black text-secondary mb-2">Venus</h4>
+<p class="text-on-surface-variant font-medium">The Morning Star</p>
+<div class="mt-8 w-12 h-12 rounded-full border-2 border-outline flex items-center justify-center group-hover:bg-primary group-hover:border-primary transition-colors">
+<div class="w-3 h-3 bg-white rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></div>
+</div>
+</div>
+</div>
+<!-- Mars -->
+<div class="group cursor-pointer">
+<div class="bg-surface-container-high rounded-[2rem] p-8 h-full flex flex-col items-center text-center transition-all duration-300 hover:-translate-y-2 border-2 border-transparent hover:border-primary/30 relative overflow-hidden">
+<div class="mb-8 h-48 w-48 flex items-center justify-center">
+<img alt="Mars" class="w-full h-full object-contain" data-alt="stylized cartoon red planet mars with visible craters and dusty atmosphere on a clean minimalist space background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAvGFKYOGarKXOdxvbaJS7yKfxt3iXmrXLrg8YLFYoOe1MTeALjGk1K-RKSQamu0jY-8woEFVDRrOup66pDyTsDIvkH6_z5k1bAsxEcant8UgorQPxwRa4GM1IUACSHeG28rM66qYFkchRwcX4kxxP5WdVwZYevTFkKGy93J1ode9Kg3uNehHWMDmnwHMA3wZBi9pfVdMOdOpIVyKl0gk-OJ9WHiF8hCBAVa-qnJ_IB5dwLG0cD5snpaVVVTVYo3U53P6erIul41Xo"/>
+</div>
+<h4 class="text-2xl font-black text-secondary mb-2">Mars</h4>
+<p class="text-on-surface-variant font-medium">The Red Desert</p>
+<div class="mt-8 w-12 h-12 rounded-full border-2 border-outline flex items-center justify-center group-hover:bg-primary group-hover:border-primary transition-colors">
+<div class="w-3 h-3 bg-white rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></div>
+</div>
+</div>
+</div>
+<!-- Jupiter -->
+<div class="group cursor-pointer">
+<div class="bg-surface-container-high rounded-[2rem] p-8 h-full flex flex-col items-center text-center transition-all duration-300 hover:-translate-y-2 border-2 border-transparent hover:border-primary/30 relative overflow-hidden">
+<div class="mb-8 h-48 w-48 flex items-center justify-center">
+<img alt="Jupiter" class="w-full h-full object-contain" data-alt="large gaseous giant jupiter cartoon illustration with distinct colorful storm bands and a prominent red spot" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBXUD3qkadYI5dl62O4hLIsmep0gc4UNB1pdbXuTlBTNrvJy3Ck4ZRF0FCPpDcjDGpRgf9hOKT5tsYp66OIpwtyz4fStHv3v5rSJdsyqpuMsC1S110QcuTsFIatAK_2ABZNd_OalClHA0arMJnPFegVkMGdTOHbqYzaJNNnpP6UafUOitratJpwYWlxN8FbMw8zbvTBPbSAsJbbdlHDYhmmNUUlrQQYVPDcQqoJlgJC1vCdggmyVcbHKM90_qUB3TVddBA_hns1tZk"/>
+</div>
+<h4 class="text-2xl font-black text-secondary mb-2">Jupiter</h4>
+<p class="text-on-surface-variant font-medium">The Gas Giant</p>
+<div class="mt-8 w-12 h-12 rounded-full border-2 border-outline flex items-center justify-center group-hover:bg-primary group-hover:border-primary transition-colors">
+<div class="w-3 h-3 bg-white rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Footer Actions -->
+<div class="mt-20 flex flex-col sm:flex-row items-center justify-center gap-6">
+<button class="px-12 py-5 bg-gradient-to-br from-primary to-primary-container text-on-primary-container font-black text-xl rounded-2xl shadow-[0_0_30px_rgba(109,40,217,0.3)] hover:scale-105 active:scale-95 transition-all flex items-center gap-3 group">
+                Locked In
+                <span class="material-symbols-outlined transition-transform group-hover:translate-x-1" style="font-variation-settings: 'FILL' 1;">arrow_forward</span>
+</button>
+<button class="px-8 py-5 text-on-surface-variant font-bold hover:text-secondary transition-colors text-lg">
+                Skip for now
+            </button>
+</div>
+</main>
+<!-- Bottom Navigation (Mobile/Standard) -->
+<nav class="fixed bottom-0 left-0 right-0 bg-[#11131d]/90 backdrop-blur-xl border-t border-outline-variant/10 flex justify-around items-center py-4 px-2 z-50">
+<div class="flex flex-col items-center gap-1 text-[#fff9ef] cursor-pointer">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">nights_stay</span>
+<span class="text-[10px] font-black uppercase">Missions</span>
+</div>
+<div class="flex flex-col items-center gap-1 text-[#d3bbff]/50 hover:text-[#fff9ef] transition-colors cursor-pointer">
+<span class="material-symbols-outlined">public</span>
+<span class="text-[10px] font-black uppercase">Planets</span>
+</div>
+<div class="flex flex-col items-center gap-1 text-[#d3bbff]/50 hover:text-[#fff9ef] transition-colors cursor-pointer">
+<span class="material-symbols-outlined">auto_awesome</span>
+<span class="text-[10px] font-black uppercase">Stars</span>
+</div>
+<div class="flex flex-col items-center gap-1 text-[#d3bbff]/50 hover:text-[#fff9ef] transition-colors cursor-pointer">
+<span class="material-symbols-outlined">rocket_launch</span>
+<span class="text-[10px] font-black uppercase">Rocket</span>
+</div>
+</nav>
+</body></html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Mission Accomplished - CosmoQuiz</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface": "#11131d",
+                    "surface-container-highest": "#32343f",
+                    "on-primary-fixed-variant": "#5b00c5",
+                    "on-tertiary-fixed-variant": "#3323cc",
+                    "surface-container-low": "#191b26",
+                    "surface-container": "#1d1f2a",
+                    "outline-variant": "#4a4455",
+                    "secondary": "#fff9ef",
+                    "on-primary-fixed": "#250059",
+                    "inverse-on-surface": "#2e303b",
+                    "surface-container-high": "#282934",
+                    "surface-container-lowest": "#0c0e18",
+                    "on-tertiary": "#1d00a5",
+                    "on-secondary": "#3a3000",
+                    "on-secondary-fixed": "#221b00",
+                    "on-primary": "#3f008d",
+                    "inverse-primary": "#7331df",
+                    "secondary-fixed": "#ffe16d",
+                    "surface-tint": "#d3bbff",
+                    "primary-container": "#6d28d9",
+                    "surface-variant": "#32343f",
+                    "tertiary-container": "#473cdd",
+                    "tertiary": "#c3c0ff",
+                    "on-error": "#690005",
+                    "surface-bright": "#373844",
+                    "inverse-surface": "#e1e1f0",
+                    "primary-fixed": "#ebddff",
+                    "on-tertiary-container": "#cccaff",
+                    "on-primary-container": "#dac5ff",
+                    "on-error-container": "#ffdad6",
+                    "on-secondary-fixed-variant": "#544600",
+                    "background": "#11131d",
+                    "on-surface-variant": "#ccc3d7",
+                    "tertiary-fixed": "#e2dfff",
+                    "primary": "#d3bbff",
+                    "on-tertiary-fixed": "#0f0069",
+                    "outline": "#958da1",
+                    "surface-dim": "#11131d",
+                    "secondary-fixed-dim": "#e9c400",
+                    "on-secondary-container": "#725f00",
+                    "error": "#ffb4ab",
+                    "error-container": "#93000a",
+                    "on-surface": "#e1e1f0",
+                    "tertiary-fixed-dim": "#c3c0ff",
+                    "secondary-container": "#ffdb3c",
+                    "on-background": "#e1e1f0",
+                    "primary-fixed-dim": "#d3bbff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "1rem",
+                    "lg": "2rem",
+                    "xl": "3rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Plus Jakarta Sans"],
+                    "body": ["Plus Jakarta Sans"],
+                    "label": ["Plus Jakarta Sans"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .star-field {
+            background-image: radial-gradient(2px 2px at 20px 30px, #eee, rgba(0,0,0,0)),
+                              radial-gradient(2px 2px at 40px 70px, #fff, rgba(0,0,0,0)),
+                              radial-gradient(2px 2px at 50px 160px, #ddd, rgba(0,0,0,0)),
+                              radial-gradient(2px 2px at 90px 40px, #fff, rgba(0,0,0,0)),
+                              radial-gradient(2px 2px at 130px 80px, #fff, rgba(0,0,0,0)),
+                              radial-gradient(2px 2px at 160px 120px, #ddd, rgba(0,0,0,0));
+            background-repeat: repeat;
+            background-size: 200px 200px;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body min-h-screen overflow-x-hidden selection:bg-primary/30">
+<div class="fixed inset-0 star-field opacity-20 pointer-events-none"></div>
+<main class="relative z-10 flex flex-col items-center justify-center min-h-screen px-6 py-12 text-center overflow-hidden">
+<div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-primary/10 rounded-full blur-[120px] pointer-events-none"></div>
+<div class="absolute bottom-1/4 left-1/3 -translate-x-1/2 w-[300px] h-[300px] bg-secondary-container/5 rounded-full blur-[100px] pointer-events-none"></div>
+<div class="relative mb-12">
+<div class="absolute inset-0 bg-secondary-container rounded-full blur-[60px] opacity-20 animate-pulse"></div>
+<div class="relative w-64 h-64 md:w-80 md:h-80 flex items-center justify-center">
+<img alt="Happy flat cartoon sun with stylish sunglasses glowing against a dark cosmic background" class="w-full h-full drop-shadow-[0_0_30px_rgba(255,219,60,0.4)]" data-alt="happy flat cartoon yellow sun wearing black sunglasses with a wide smile, glowing brightly against a deep space background with subtle stars" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC3LCF3cC0RWqz5cLpzJrwHT3PN9d-NjN2fnuP9sA5UW7S6_3QeBHhsyPmLdz0waLE7yD1YyalOQWLSlYpx-m0-2GvdxbG4dvz_Lt-pIhxwXXG12UYsc6eTCSrJpxo04vn1xBRCM3wSoEV3AqoCBUbloWHTV1v3q2TdVvJFC5hvHR7Eg5P-_HYLx2Ycw8f2YVK2ns_Lt_Coz0Zltkm5PXG4SV8wzMsu0zMElHHE9KdnHv6zdL63F-wi9EIw4f72dLYpePiQeYC009I"/>
+</div>
+<div class="absolute -top-4 -right-4 bg-surface-container-high p-4 rounded-xl rotate-12 shadow-xl">
+<span class="material-symbols-outlined text-secondary-container text-4xl" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<div class="absolute top-1/2 -left-8 bg-surface-container-high p-3 rounded-xl -rotate-12 shadow-xl">
+<span class="material-symbols-outlined text-primary text-3xl" style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
+</div>
+<div class="absolute bottom-0 right-4 bg-surface-container-high p-3 rounded-xl rotate-6 shadow-xl">
+<span class="material-symbols-outlined text-tertiary text-3xl" style="font-variation-settings: 'FILL' 1;">celebration</span>
+</div>
+</div>
+<div class="max-w-2xl mx-auto space-y-6 relative">
+<h1 class="text-6xl md:text-8xl font-black tracking-tighter text-secondary italic">
+                Super Star!
+            </h1>
+<p class="text-xl md:text-2xl text-on-surface-variant font-medium max-w-lg mx-auto leading-relaxed">
+                You've mastered the <span class="text-primary font-extrabold">Moon Base</span> challenge. The galaxy is cheering for you!
+            </p>
+<div class="grid grid-cols-3 gap-4 mt-8">
+<div class="bg-surface-container-high/60 backdrop-blur-md rounded-lg p-4 border border-outline-variant/10">
+<p class="text-secondary-container font-black text-2xl">100%</p>
+<p class="text-xs uppercase tracking-widest text-on-surface-variant font-bold">Accuracy</p>
+</div>
+<div class="bg-surface-container-high/60 backdrop-blur-md rounded-lg p-4 border border-outline-variant/10">
+<p class="text-primary font-black text-2xl">+450</p>
+<p class="text-xs uppercase tracking-widest text-on-surface-variant font-bold">Cosmic XP</p>
+</div>
+<div class="bg-surface-container-high/60 backdrop-blur-md rounded-lg p-4 border border-outline-variant/10">
+<p class="text-tertiary font-black text-2xl">#1</p>
+<p class="text-xs uppercase tracking-widest text-on-surface-variant font-bold">Rank</p>
+</div>
+</div>
+</div>
+<div class="mt-12 space-y-4 w-full max-w-sm">
+<button class="group relative w-full bg-gradient-to-br from-primary to-primary-container text-on-primary-container font-black text-xl py-6 rounded-xl hover:scale-105 active:scale-95 transition-all duration-200 shadow-[0_0_40px_rgba(109,40,217,0.3)] overflow-hidden">
+<div class="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+<span class="relative flex items-center justify-center gap-3">
+                    Go to Next Planet
+                    <span class="material-symbols-outlined">rocket_launch</span>
+</span>
+</button>
+<button class="w-full bg-surface-container-high text-on-surface-variant font-bold text-lg py-5 rounded-xl hover:bg-surface-container-highest transition-colors flex items-center justify-center gap-2">
+<span class="material-symbols-outlined">history</span>
+                Review Mission
+            </button>
+</div>
+<div class="mt-16 flex items-center gap-3 px-6 py-3 bg-surface-container-lowest rounded-full border border-outline-variant/5">
+<div class="flex -space-x-2">
+<img alt="Explorer 1" class="w-8 h-8 rounded-full border-2 border-surface" data-alt="close up avatar of a friendly space cadet with a purple helmet" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAidMH4YwuH_bPPi78O8e00eu0pwcvnp3k3_bzemEo5ENe9SdkwVqas_N1UpjdDRshazlU0iLosH5joq0tOwRpXkJ-awN8bZPBzTskWiwEHkIr83F7wyYUISkQZdefPXC0HFAFDDsQqHVoeRB8Cw8_QKjap0Aas24OxdDoIqzQelKz8EE6TNCuGpnDxmu5YLeRUBI_sQhoT_8L1KrW2QVcbGKMBwocL2jimyQUng9CwLotyYjhXwRIQq1gZlF2LfqrFqb0OaWbDqFA"/>
+<img alt="Explorer 2" class="w-8 h-8 rounded-full border-2 border-surface" data-alt="close up avatar of a happy alien explorer with three eyes and a smile" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAWOb2N6cT_9FqKbInUJqeZAE31gGQMCrKbYPrPve5ruUNKbmS2W_M60mw9GS5GPqpFpcEX3xB3FGJoXGY1r0XUmaIb44N1PbJuefCh5qf1fhhHkSTo9xGMU3TVBt4z4dqyujQvqU-flhDtYj7UCSkVP4hX_qwQi2W7wbQcd_MdkSwAbdoFyt0M-wyDDthBEIwZwA2cJO2WzXcE2w7lyrQwuSrfonrQbnc1bVPih8tVlLNh6pOXO_40d_y62O0bgoSUQTh9bK0CTbs"/>
+<img alt="Explorer 3" class="w-8 h-8 rounded-full border-2 border-surface" data-alt="close up avatar of a robot explorer with glowing blue eyes" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCwr0mv6fiU5JC6HYw_6De7cfkFcOemmFvic0BYnvrUTsHVWvwoRsz6IfDdXb1VTxZXFjy38YnWBzN3SQib_u0bwU6UIuUYXEgmC5uClRFavboO3mtNv1-UJP88Q0WCLu5fKj3Kk1uD3_zLp6ELPQarfISPRLwV-X_sgxrDWgulZkjFNCTE3Oy3iLTnN5drUvtOyuu2tQBp9Mg_VIjCVjSuZTHPtd7MNDSzgQD5JZ_WF6sOEWCVipzeCSO-xPQ9lrsf4jec7gbaabU"/>
+</div>
+<p class="text-sm font-bold text-on-surface-variant">1,240 explorers just passed this level!</p>
+</div>
+</main>
+<div class="fixed bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-surface to-transparent pointer-events-none"></div>
+<div class="fixed inset-0 pointer-events-none overflow-hidden select-none">
+<div class="absolute top-10 left-[10%] opacity-40 animate-bounce" style="animation-duration: 3s;">
+<span class="material-symbols-outlined text-secondary-container text-4xl" style="font-variation-settings: 'FILL' 1;">colors_spark</span>
+</div>
+<div class="absolute top-[20%] right-[15%] opacity-30 animate-pulse">
+<span class="material-symbols-outlined text-primary text-6xl" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<div class="absolute bottom-[30%] left-[5%] opacity-20 rotate-45">
+<span class="material-symbols-outlined text-tertiary text-8xl" style="font-variation-settings: 'FILL' 1;">hotel_class</span>
+</div>
+<div class="absolute bottom-[15%] right-[10%] opacity-40 animate-bounce" style="animation-duration: 4s;">
+<span class="material-symbols-outlined text-secondary-container text-5xl" style="font-variation-settings: 'FILL' 1;">celebration</span>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>CosmoQuiz - Start Mission</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface": "#11131d",
+                    "surface-container-highest": "#32343f",
+                    "on-primary-fixed-variant": "#5b00c5",
+                    "on-tertiary-fixed-variant": "#3323cc",
+                    "surface-container-low": "#191b26",
+                    "surface-container": "#1d1f2a",
+                    "outline-variant": "#4a4455",
+                    "secondary": "#fff9ef",
+                    "on-primary-fixed": "#250059",
+                    "inverse-on-surface": "#2e303b",
+                    "surface-container-high": "#282934",
+                    "surface-container-lowest": "#0c0e18",
+                    "on-tertiary": "#1d00a5",
+                    "on-secondary": "#3a3000",
+                    "on-secondary-fixed": "#221b00",
+                    "on-primary": "#3f008d",
+                    "inverse-primary": "#7331df",
+                    "secondary-fixed": "#ffe16d",
+                    "surface-tint": "#d3bbff",
+                    "primary-container": "#6d28d9",
+                    "surface-variant": "#32343f",
+                    "tertiary-container": "#473cdd",
+                    "tertiary": "#c3c0ff",
+                    "on-error": "#690005",
+                    "surface-bright": "#373844",
+                    "inverse-surface": "#e1e1f0",
+                    "primary-fixed": "#ebddff",
+                    "on-tertiary-container": "#cccaff",
+                    "on-primary-container": "#dac5ff",
+                    "on-error-container": "#ffdad6",
+                    "on-secondary-fixed-variant": "#544600",
+                    "background": "#11131d",
+                    "on-surface-variant": "#ccc3d7",
+                    "tertiary-fixed": "#e2dfff",
+                    "primary": "#d3bbff",
+                    "on-tertiary-fixed": "#0f0069",
+                    "outline": "#958da1",
+                    "surface-dim": "#11131d",
+                    "secondary-fixed-dim": "#e9c400",
+                    "on-secondary-container": "#725f00",
+                    "error": "#ffb4ab",
+                    "error-container": "#93000a",
+                    "on-surface": "#e1e1f0",
+                    "tertiary-fixed-dim": "#c3c0ff",
+                    "secondary-container": "#ffdb3c",
+                    "on-background": "#e1e1f0",
+                    "primary-fixed-dim": "#d3bbff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "1rem",
+                    "lg": "2rem",
+                    "xl": "3rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Plus Jakarta Sans"],
+                    "body": ["Plus Jakarta Sans"],
+                    "label": ["Plus Jakarta Sans"]
+            }
+          },
+        }
+      }
+    </script>
+<style>
+        body {
+            background-color: #11131d;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            overflow-x: hidden;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .nebula-bg {
+            background: radial-gradient(circle at 20% 30%, rgba(109, 40, 217, 0.15) 0%, transparent 50%),
+                        radial-gradient(circle at 80% 70%, rgba(211, 187, 255, 0.1) 0%, transparent 50%);
+        }
+        .star-field {
+            background-image: radial-gradient(white, rgba(255,255,255,0.2) 2px, transparent 40px);
+            background-size: 100px 100px;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface antialiased">
+<!-- Simplified Top Header -->
+<header class="w-full top-0 sticky z-50 bg-[#11131d]/60 backdrop-blur-xl">
+<div class="flex justify-center items-center px-6 py-6 w-full">
+<div class="flex items-center gap-2">
+<span class="text-3xl font-black text-transparent bg-clip-text bg-gradient-to-br from-[#d3bbff] to-[#6d28d9] font-['Plus_Jakarta_Sans'] tracking-tight">CosmoQuiz</span>
+</div>
+</div>
+</header>
+<main class="relative min-h-[calc(100vh-84px)] flex items-center justify-center px-6 py-12 overflow-hidden nebula-bg">
+<!-- Decorative Background Elements -->
+<div class="absolute inset-0 opacity-20 star-field pointer-events-none"></div>
+<div class="absolute top-1/4 -right-20 w-96 h-96 bg-primary-container/20 rounded-full blur-[100px] pointer-events-none"></div>
+<div class="absolute bottom-1/4 -left-20 w-80 h-80 bg-secondary-container/10 rounded-full blur-[80px] pointer-events-none"></div>
+<div class="relative z-10 max-w-4xl w-full flex flex-col items-center text-center space-y-12">
+<!-- Hero Image: Now Centered and Larger for Kids -->
+<div class="relative w-full max-w-md aspect-square">
+<!-- Main Image Container -->
+<div class="relative z-20 rounded-lg overflow-hidden bg-surface-container-high shadow-2xl transition-transform duration-500 p-4 border-4 border-primary/20">
+<img alt="Friendly Astronaut" class="w-full h-full object-cover rounded-lg" data-alt="friendly flat cartoon astronaut floating in deep vibrant space with glowing stars and colorful nebulas soft lighting playful style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDj9GePdddqjQCIXF7NPrG8KpCm7GsivjLaSzJLig8cmBl_lWzFAK6ZQLOuTgw968r0Ztfc9q1TFzGcj_xM2l5q6OoVNo7PFtwx9UkaipDupWXxygN4qhIKfZ0Ym4hfHjrYY4Wbw3wvHrVmuUov66ZJvvhlZZkHqnCf9Ncmprt3IfdLk8U06LAUWSyavBiJ_C9fzKkrVBXxsFDCACN9yGAtveFNh1RCqEclF-dabmOruKhEZO35uy9HkJTstrb5FZioCGYczIupIgw"/>
+</div>
+<!-- Decorative Floating Cards - Kept for visual interest -->
+<div class="absolute -top-6 -left-6 z-30 bg-surface-container/90 backdrop-blur-md p-4 rounded-lg border border-outline-variant/15 shadow-xl -rotate-6">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">workspace_premium</span>
+</div>
+<div class="text-left">
+<div class="text-xs font-bold text-on-surface-variant uppercase tracking-tighter">Current Rank</div>
+<div class="text-sm font-black text-on-surface">Space Cadet</div>
+</div>
+</div>
+</div>
+<!-- Planet Decoration -->
+<div class="absolute -bottom-20 -left-10 w-48 h-48 rounded-full bg-gradient-to-tr from-[#6d28d9] to-transparent opacity-40 blur-2xl -z-10"></div>
+</div>
+<!-- Centered Text Content -->
+<div class="space-y-6">
+<div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-surface-container-high border border-outline-variant/15 text-primary font-bold text-sm tracking-widest uppercase">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
+                    New Galaxy Unlocked
+                </div>
+<h1 class="text-5xl md:text-7xl font-extrabold text-on-surface tracking-tight leading-tight">
+                    Ready to <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary-container">Explore?</span>
+</h1>
+<p class="text-lg md:text-xl text-on-surface-variant max-w-xl mx-auto leading-relaxed font-medium">
+                    Join the space mission and test your galaxy knowledge! Compete with fellow explorers and climb the cosmic leaderboard.
+                </p>
+<div class="flex flex-col sm:flex-row gap-6 justify-center pt-8">
+<button class="px-12 py-6 bg-gradient-to-br from-primary to-primary-container text-on-primary-fixed font-black text-2xl rounded-2xl shadow-[0_0_40px_rgba(109,40,217,0.4)] hover:scale-105 active:scale-95 transition-all duration-200 flex items-center justify-center gap-3">
+                        Start Mission!
+                        <span class="material-symbols-outlined text-3xl" style="font-variation-settings: 'FILL' 1;">rocket_launch</span>
+</button>
+</div>
+<div class="flex items-center justify-center gap-12 pt-8">
+<div class="flex flex-col">
+<span class="text-3xl font-black text-secondary">2.4k+</span>
+<span class="text-xs uppercase tracking-widest text-on-surface-variant font-bold">Active Cadets</span>
+</div>
+<div class="w-px h-10 bg-outline-variant/30"></div>
+<div class="flex flex-col">
+<span class="text-3xl font-black text-secondary">150+</span>
+<span class="text-xs uppercase tracking-widest text-on-surface-variant font-bold">Space Quizzes</span>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Simplified Feature Section -->
+<section class="max-w-6xl mx-auto px-6 py-20">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="p-8 rounded-lg bg-surface-container-low border border-outline-variant/5 text-center">
+<span class="material-symbols-outlined text-5xl text-primary mb-4 block" style="font-variation-settings: 'FILL' 1;">public</span>
+<h3 class="text-xl font-black text-on-surface mb-2">Planet Explorer</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">Discover hidden secrets of our solar system!</p>
+</div>
+<div class="p-8 rounded-lg bg-surface-container-low border border-outline-variant/5 text-center">
+<span class="material-symbols-outlined text-5xl text-secondary-container mb-4 block" style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
+<h3 class="text-xl font-black text-on-surface mb-2">Star Map</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">Earn unique badges for every completion.</p>
+</div>
+<div class="p-8 rounded-lg bg-surface-container-low border border-outline-variant/5 text-center">
+<span class="material-symbols-outlined text-5xl text-tertiary mb-4 block" style="font-variation-settings: 'FILL' 1;">rocket_launch</span>
+<h3 class="text-xl font-black text-on-surface mb-2">My Rocket</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">Level up your astronaut as you progress.</p>
+</div>
+</div>
+</section>
+</body></html>
