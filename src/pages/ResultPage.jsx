@@ -1,5 +1,7 @@
 import React from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
+import perfectBadge from '../assets/perfect-badge.png';
+import cartoonRocket from '../assets/Cartoon rocket with fiery exhaust trail.png';
 
 const ResultPage = () => {
   const location = useLocation();
@@ -31,9 +33,11 @@ const ResultPage = () => {
           <div className="mb-12 relative inline-block">
              <div className="w-48 h-48 bg-gradient-to-tr from-primary-container to-tertiary-container rounded-full flex mx-auto items-center justify-center shadow-[0_0_80px_rgba(109,40,217,0.6)] relative z-20 overflow-hidden">
                 <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(255,255,255,0.4),transparent_50%)]"></div>
-                <span className="material-symbols-outlined text-[100px] text-[#fff9ef]" style={{ fontVariationSettings: "'FILL' 1" }}>
-                   {isPerfect ? 'workspace_premium' : 'rocket'}
-                </span>
+                <img 
+                  src={isPerfect ? perfectBadge : cartoonRocket} 
+                  alt={isPerfect ? 'Perfect Badge' : 'Rocket'}
+                  className="w-32 h-32 object-contain drop-shadow-2xl relative z-10"
+                />
              </div>
              
              {/* Score Badge */}

@@ -1,5 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import friendlyAstronaut from '../assets/Crayon Astronaut Ill.png';
 
 const StartPage = () => {
   const navigate = useNavigate();
@@ -17,10 +18,12 @@ const StartPage = () => {
       {/* Main Card */}
       <div className="bg-surface-container/60 backdrop-blur-2xl border border-outline-variant/20 rounded-[2rem] p-10 max-w-2xl w-full text-center relative z-10 shadow-[0_20px_40px_-15px_rgba(37,0,89,0.3)] shadow-[#6d28d9]/20">
         <div className="mb-8 relative inline-block">
-          <div className="w-32 h-32 bg-gradient-to-br from-primary to-primary-container rounded-full flex items-center justify-center -rotate-[15deg] shadow-[0_0_50px_rgba(109,40,217,0.4)]">
-            <span className="material-symbols-outlined text-7xl text-on-primary-fixed" style={{ fontVariationSettings: "'FILL' 1" }}>
-              cruelty_free
-            </span>
+          <div className="w-48 h-48 flex items-center justify-center">
+            <img 
+              src={friendlyAstronaut} 
+              alt="Friendly astronaut floating in space" 
+              className="w-full h-full object-contain drop-shadow-[0_0_30px_rgba(109,40,217,0.4)]"
+            />
           </div>
           <div className="absolute -top-4 -right-4 w-12 h-12 bg-secondary-container rounded-full flex items-center justify-center animate-bounce shadow-[0_0_20px_rgba(255,219,60,0.4)]">
             <span className="material-symbols-outlined text-on-secondary-container text-xl" style={{ fontVariationSettings: "'FILL' 1" }}>

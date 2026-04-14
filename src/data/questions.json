@@ -3,10 +3,10 @@
     "id": 1,
     "question": "Which planet do we live on?",
     "options": [
-      { "id": "A", "text": "Mars", "icon": "rocket" },
-      { "id": "B", "text": "Earth", "icon": "public" },
-      { "id": "C", "text": "Jupiter", "icon": "brightness_high" },
-      { "id": "D", "text": "Saturn", "icon": "language" }
+      { "id": "A", "text": "Mars", "icon": "rocket", "illustration": "Crayon Mars Illustra.png" },
+      { "id": "B", "text": "Earth", "icon": "public", "illustration": "Crayon Earth Illustr.png" },
+      { "id": "C", "text": "Jupiter", "icon": "brightness_high", "illustration": "Crayon Jupiter Illus.png" },
+      { "id": "D", "text": "Saturn", "icon": "language", "illustration": "Crayon Saturn Illust.png" }
     ],
     "correctAnswer": "B",
     "explanation": "We live on Earth! It's the only planet we know of that has life!"
@@ -15,10 +15,10 @@
     "id": 2,
     "question": "What is the big, hot star in the middle of our solar system?",
     "options": [
-      { "id": "A", "text": "The Moon", "icon": "bedtime" },
-      { "id": "B", "text": "The Sun", "icon": "light_mode" },
-      { "id": "C", "text": "A Comet", "icon": "auto_awesome" },
-      { "id": "D", "text": "Pluto", "icon": "blur_on" }
+      { "id": "A", "text": "The Moon", "icon": "bedtime", "illustration": "Crayon Moon Illustra.png" },
+      { "id": "B", "text": "The Sun", "icon": "light_mode", "illustration": "Crayon Sun Illustrat.png" },
+      { "id": "C", "text": "A Comet", "icon": "auto_awesome", "illustration": "Crayon Comet Illustr.png" },
+      { "id": "D", "text": "Pluto", "icon": "blur_on", "illustration": "Crayon Uranus Illust.png" }
     ],
     "correctAnswer": "B",
     "explanation": "The Sun is a huge star that gives us light and keeps us warm!"
@@ -27,10 +27,10 @@
     "id": 3,
     "question": "Which planet is known as the 'Red Planet'?",
     "options": [
-      { "id": "A", "text": "Venus", "icon": "lens" },
-      { "id": "B", "text": "Mars", "icon": "blur_circular" },
-      { "id": "C", "text": "Neptune", "icon": "ac_unit" },
-      { "id": "D", "text": "Mercury", "icon": "whatshot" }
+      { "id": "A", "text": "Venus", "icon": "lens", "illustration": "Crayon Venus Illustr.png" },
+      { "id": "B", "text": "Mars", "icon": "blur_circular", "illustration": "Crayon Mars Illustra.png" },
+      { "id": "C", "text": "Neptune", "icon": "ac_unit", "illustration": "Crayon Neptune Illus.png" },
+      { "id": "D", "text": "Mercury", "icon": "whatshot", "illustration": "Crayon Mercury Illus.png" }
     ],
     "correctAnswer": "B",
     "explanation": "Mars is called the Red Planet because its soil looks rusty red!"
@@ -39,10 +39,10 @@
     "id": 4,
     "question": "What do we see shining in the sky at night?",
     "options": [
-      { "id": "A", "text": "The Sun", "icon": "light_mode" },
-      { "id": "B", "text": "Clouds", "icon": "cloud" },
-      { "id": "C", "text": "The Moon and Stars", "icon": "nights_stay" },
-      { "id": "D", "text": "Rainbows", "icon": "looks" }
+      { "id": "A", "text": "The Sun", "icon": "light_mode", "illustration": "Crayon Sun Illustrat.png" },
+      { "id": "B", "text": "Clouds", "icon": "cloud", "illustration": "Crayon Sky Illustrat.png" },
+      { "id": "C", "text": "The Moon and Stars", "icon": "nights_stay", "illustration": "Moon and stars in crayon style.png" },
+      { "id": "D", "text": "Rainbows", "icon": "looks", "illustration": "Crayon Rainbow Illus.png" }
     ],
     "correctAnswer": "C",
     "explanation": "At night, we can see the Moon and many beautiful sparkly stars!"
@@ -51,12 +51,24 @@
     "id": 5,
     "question": "Which planet has big, beautiful rings around it?",
     "options": [
-      { "id": "A", "text": "Saturn", "icon": "animation" },
-      { "id": "B", "text": "Earth", "icon": "public" },
-      { "id": "C", "text": "Mars", "icon": "local_fire_department" },
-      { "id": "D", "text": "Venus", "icon": "flare" }
+      { "id": "A", "text": "Saturn", "icon": "animation", "illustration": "Crayon Saturn Illust.png" },
+      { "id": "B", "text": "Earth", "icon": "public", "illustration": "Crayon Earth Illustr.png" },
+      { "id": "C", "text": "Mars", "icon": "local_fire_department", "illustration": "Crayon Mars Illustra.png" },
+      { "id": "D", "text": "Venus", "icon": "flare", "illustration": "Crayon Venus Illustr.png" }
     ],
     "correctAnswer": "A",
     "explanation": "Saturn is famous for its bright rings made of ice and rock!"
+  },
+  {
+    "id": 6,
+    "question": "What is the biggest planet in the solar system?",
+    "options":[
+      { "id": "A", "text": "Jupiter", "icon": "brightness_high", "illustration": "Crayon Jupiter Illus.png" },
+      { "id": "B", "text": "Mars", "icon": "rocket", "illustration": "Crayon Mars Illustra.png" },
+      { "id": "C", "text": "Earth", "icon": "public", "illustration": "Crayon Earth Illustr.png" },
+      { "id": "D", "text": "Saturn", "icon": "language", "illustration": "Crayon Saturn Illust.png" }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Jupiter is the largest planet in our solar system!"
   }
 ]

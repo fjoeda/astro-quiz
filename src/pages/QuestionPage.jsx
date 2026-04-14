@@ -3,6 +3,42 @@ import { useNavigate } from 'react-router-dom';
 import Confetti from 'react-confetti';
 import { useWindowSize } from 'react-use';
 import questionsData from '../data/questions.json';
+import happySun from '../assets/Smiling sun with cheerful rays.png';
+import robotHead from '../assets/Broken space rover on the ground.png';
+
+// Import all illustrations
+import crayonMars from '../assets/Crayon Mars Illustra.png';
+import crayonEarth from '../assets/Crayon Earth Illustr.png';
+import crayonJupiter from '../assets/Crayon Jupiter Illus.png';
+import crayonSaturn from '../assets/Crayon Saturn Illust.png';
+import crayonMoon from '../assets/Crayon Moon Illustra.png';
+import crayonSun from '../assets/Crayon Sun Illustrat.png';
+import crayonComet from '../assets/Crayon Comet Illustr.png';
+import crayonUranus from '../assets/Crayon Uranus Illust.png';
+import crayonVenus from '../assets/Crayon Venus Illustr.png';
+import crayonNeptune from '../assets/Crayon Neptune Illus.png';
+import crayonMercury from '../assets/Crayon Mercury Illus.png';
+import crayonSky from '../assets/Crayon Sky Illustrat.png';
+import moonAndStars from '../assets/Moon and stars in crayon style.png';
+import crayonRainbow from '../assets/Crayon Rainbow Illus.png';
+
+// Create illustration mapping
+const illustrations = {
+  'Crayon Mars Illustra.png': crayonMars,
+  'Crayon Earth Illustr.png': crayonEarth,
+  'Crayon Jupiter Illus.png': crayonJupiter,
+  'Crayon Saturn Illust.png': crayonSaturn,
+  'Crayon Moon Illustra.png': crayonMoon,
+  'Crayon Sun Illustrat.png': crayonSun,
+  'Crayon Comet Illustr.png': crayonComet,
+  'Crayon Uranus Illust.png': crayonUranus,
+  'Crayon Venus Illustr.png': crayonVenus,
+  'Crayon Neptune Illus.png': crayonNeptune,
+  'Crayon Mercury Illus.png': crayonMercury,
+  'Crayon Sky Illustrat.png': crayonSky,
+  'Moon and stars in crayon style.png': moonAndStars,
+  'Crayon Rainbow Illus.png': crayonRainbow,
+};
 
 const QuestionPage = () => {
   const navigate = useNavigate();
@@ -83,9 +119,13 @@ const QuestionPage = () => {
                 disabled={feedbackState !== null}
                 className={`flex flex-col items-center justify-center p-8 rounded-[2rem] border-2 transition-all duration-300 transform ${!feedbackState && 'active:scale-95'} ${optionStateClass}`}
               >
-                <span className="material-symbols-outlined text-6xl mb-4" style={{ fontVariationSettings: "'FILL' 1" }}>
-                  {option.icon}
-                </span>
+                <div className="w-24 h-24 mb-4 flex items-center justify-center">
+                  <img 
+                    src={illustrations[option.illustration]} 
+                    alt={option.text}
+                    className="w-full h-full object-contain drop-shadow-lg"
+                  />
+                </div>
                 <span className="text-2xl font-bold font-headline">{option.text}</span>
               </button>
             );
@@ -104,10 +144,20 @@ const QuestionPage = () => {
               {/* Backglow */}
               <div className={`absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-64 rounded-full blur-[80px] pointer-events-none ${feedbackState === 'correct' ? 'bg-primary' : 'bg-error'}`}></div>
 
-              <div className="relative z-10 w-32 h-32 mx-auto rounded-full flex items-center justify-center mb-8 shadow-2xl bg-surface-container-high">
-                 <span className={`material-symbols-outlined text-7xl ${feedbackState === 'correct' ? 'text-secondary-container animate-bounce' : 'text-error animate-pulse'}`} style={{ fontVariationSettings: "'FILL' 1" }}>
-                    {feedbackState === 'correct' ? 'robot_2' : 'sentiment_dissatisfied'}
-                 </span>
+              <div className="relative z-10 w-32 h-32 mx-auto flex items-center justify-center mb-8">
+                 {feedbackState === 'correct' ? (
+                   <img 
+                     src={happySun} 
+                     alt="Happy sun with sunglasses" 
+                     className="w-full h-full object-contain drop-shadow-[0_0_30px_rgba(255,219,60,0.6)] animate-bounce"
+                   />
+                 ) : (
+                   <img 
+                     src={robotHead} 
+                     alt="Sad robot head" 
+                     className="w-full h-full object-contain drop-shadow-[0_0_20px_rgba(255,180,171,0.4)] animate-pulse"
+                   />
+                 )}
               </div>
 
               <h3 className={`text-4xl font-extrabold mb-4 ${feedbackState === 'correct' ? 'text-primary' : 'text-error'}`}>
